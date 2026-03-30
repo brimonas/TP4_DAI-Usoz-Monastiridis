@@ -1,0 +1,23 @@
+{
+  "name": "tp4-dai",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/brimonas/TP4_DAI-Usoz-Monastiridis#readme",
+  "bugs": {
+    "url": "https://github.com/brimonas/TP4_DAI-Usoz-Monastiridis/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brimonas/TP4_DAI-Usoz-Monastiridis.git"
+  },
+  "license": "ISC",
+  "author": "Usoz-Monastiridis",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
