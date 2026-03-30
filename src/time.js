@@ -12,18 +12,19 @@ export function horaActual(){
 */
 let horaActual = () =>{
     let fecha = new Date();
-    let hora = String(fecha.getHours()).padstart(2, '0');
-    let minutos = String(fecha.getMinutes()).padstart(2, '0');
-    let segundos = String(fecha.getSeconds()).padstart(2, '0');
+    let hora = String(fecha.getHours()).padStart(2, '0');
+    let minutos = String(fecha.getMinutes()).padStart(2, '0');
+    let segundos = String(fecha.getSeconds()).padStart(2, '0');
+      return `${hora}:${minutos}:${segundos}`;
 }
 let FehcaActual = () =>{
     let fecha = new Date();
-    let año = String(fecha.getFullYear()).padstart(2, '0');
-    let mes = String(fecha.getMonth()).padstart(2, '0');
-    let dia =String(fecha.getDay()).padstart(2, '0');
-    let hora = String(fecha.getHours()).padstart(2, '0');
-    let minutos = String(fecha.getMinutes()).padstart(2, '0');
-    let segundos = String(fecha.getSeconds()).padstart(2, '0');
-    
+    let año = fecha.getFullYear();
+    let mes = String(fecha.getMonth()+1).padStart(2, '0');
+    let dia =String(fecha.getDate()).padStart(2, '0');
+    let hora = String(fecha.getHours()).padStart(2, '0');
+    let minutos = String(fecha.getMinutes()).padStart(2, '0');
+    let segundos = String(fecha.getSeconds()).padStart(2, '0');
+      return `${dia}/${mes}/${año}/${hora}:${minutos}:${segundos}`;
 }
 export  {horaActual, FehcaActual};
